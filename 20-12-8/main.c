@@ -1,0 +1,149 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    printf("Hello world!\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    FILE*pf=fopen("text.txt","w+");
+//    if(pf==NULL)
+//    {
+//        return 0;
+//    }
+//    fputs("babdf",pf);
+//    fseek(pf,-2,SEEK_END);
+//    int ch=fgetc(pf);
+//    int tmp=ftell(pf);
+//    printf("%d\n",tmp);
+//    printf("%c",ch);
+//    fclose(pf);
+//    pf=NULL;
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    FILE*pf=fopen("text.txt","r");
+//    if(pf==NULL)
+//    {
+//        return 0;
+//    }
+//    int ch;
+//    while((ch=fgetc(pf))!=EOF)
+//    {
+//        putchar(ch);
+//    }
+//    printf("\n");
+//    if(ferror(pf))
+//    {
+//        puts("error\n");
+//    }
+//    else if(feof(pf))
+//        {
+//            puts("end of file\n");
+//        }
+//    fclose(pf);
+//    pf=NULL;
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[10];
+//    int i;
+//    for(i=0;i<10;i++)
+//    {
+//        arr[i]=i;
+//        printf("%d ",arr[i]);
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#define MAX 100
+//#define STR "hehe"
+//#define ret register
+//int main()
+//{
+//    reg int a;
+//    printf("%s\n",STR);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int x,y;
+//    for(x=0,y=0;x<2&&y<5;++x,y++)
+//    {printf("hehe\n");}
+//
+//    return 0;
+//}
+//#include"stdio.h"
+//
+//int main()
+//
+//{   char s[30];
+//
+//	FILE *wen1,*wen2;
+//
+//	wen1=fopen("file1.txt","r");
+//
+//	fgets(s,30,wen1);
+//	fclose(wen1);
+//	wen1=NULL;
+//	int i;
+//	printf("%s",s);
+//	for(i=0;i<30;i++)
+//
+//	 {
+//
+//	 	if(s[i]<='z'&&s[i]>='a');
+//           {
+//
+//        s[i]-=32;
+//            printf("%c",s[i]);}
+//
+//	 }
+//	wen2=fopen("file2.txt","w");
+//	printf("\n%s",s);
+//	fputs(s,wen2);
+//	fclose(wen2);
+//	wen2=NULL;
+//   return 0;
+//}
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include <stdio.h>
+//#include <string.h>
+//#include <windows.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//	int x,y;
+//	for(x=0,y=0;x<2&&y<5;++x,y++)
+//        {
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//
+//    double a=0.00000251;
+//    printf("%lf",a);
+//    return 0;
+//}
+#include<stdio.h>
+#define PRINT(X) printf("THE "#X" =%d\n",X)
+int main()
+{
+    int a=10;
+    int b=20;
+    PRINT(a);
+    PRINT(b);
+    return 0;
+}
